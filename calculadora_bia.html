@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Cacau</title>
+</head>
+<body>
+    <div style="float:left"> <img src="cacau.webp"; height="100px"; width="100px"> </div>
+    <h1 style="color: brown;">  Faça sua estimativa de venda </h1>
+    <b style="color: green;">Quantidade de hectares plantados: </b> <input id="hectares"> <br>
+    <b style="color:green"> Valor do kg do cacau: </b> <input id="preço"> <br>
+    <button onclick="calcular_venda()">Calcule</button> <br> 
+    
+<div id="resultado"></div>
+</body>
+</html>
+<script> 
+function calcular_venda(){
+    var hectar= Number(hectares.value)
+    var valorkg= Number(preço.value)
+var qtdKg= 400 * hectar 
+var venda= qtdKg * valorkg
+
+resultado.innerHTML= `<b style='color:brown'> Sua venda será de R$ ${venda} </b>` 
+
+}
+
+</script>
